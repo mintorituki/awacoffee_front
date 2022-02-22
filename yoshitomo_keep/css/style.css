@@ -60,9 +60,9 @@ color */
   width: 100%;
   height: 100%;
 }
-.stores_name {
-  font-size: 16px;
+.sp_stores_cars .stores_name {
   margin: 8px 0 3px;
+  font-size: 16px;
 }
 .stores_catch {
   font-size: 14px;
@@ -71,17 +71,17 @@ color */
 /* ================================================================= */
 
 .pc_stores_cards {
-  background-color: #f6f4ef;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0 auto;
   padding: 40px 20px 60px;
-  display: none;
-  justify-content: space-between;
-  flex-wrap: wrap;
   max-width: 1300px;
+  background-color: #f6f4ef;
 }
 .pc_stores_cards .stores_card {
+  width: 32%;
   max-width: 321px;
-  width: 31%;
   margin-bottom: 20px;
   background-color: #fff;
 }
@@ -92,7 +92,6 @@ color */
   margin: 0 0 0 0;
   box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.4);
 }
-
 .pc_stores_cards .stores_tags p {
   display: inline-block;
   margin-left: 5px;
@@ -106,15 +105,15 @@ color */
   content: "#";
 }
 .pc_stores_cards .stores_img {
+  position: relative;
   width: 100%;
   padding-top: 75%;
-  position: relative;
+  border-radius: 10px 10px 0 0;
 }
 .pc_stores_cards .stores_tags {
   position: absolute;
-  top: 20px;
-  left: 0;
-  padding-left: 7px;
+  top: 5%;
+  padding-left: 5px;
 }
 .pc_stores_cards .stores_img img {
   position: absolute;
