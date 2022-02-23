@@ -24,7 +24,12 @@ color */
     font-size: 12px;
 }
 .content_inner {
-    padding: 200px 0;
+    padding: 70px 20px 180px;
+}
+@media (min-width: 768px) {
+    .content_inner {
+        padding: 200px 0;
+    }
 }
 
 .inner {
