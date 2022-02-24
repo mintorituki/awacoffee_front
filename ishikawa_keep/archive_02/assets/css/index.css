@@ -108,11 +108,11 @@
     display: block;
     font-family: "Shippori Mincho B1", serif;
 }
-/* .tab_area_flex {
+.tab_area_flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-} */
+}
 .area {
     display: none;
 }
@@ -121,6 +121,50 @@
 }
 
 /* fuji CSS移動 */
+
+/* stores(SP) */
+.stores_wrap_card2 {
+    width: 48%;
+    background-color: #f6f4efff;
+    margin-bottom: 20px;
+    border: 0.5px solid #542912;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.stores_wrap_card2:hover {
+    box-shadow: 0 0 15px #542912;
+}
+.stores_wrap_card_img2 {
+    padding-top: 75%;
+    content: "";
+    background-image: url(/img/free0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.store_card_inner2 {
+    width: 90%;
+    margin: 0.5rem auto;
+}
+.stores_wrap_card_name2 {
+    /* 下のmarginかpaddingコンポーネントしたほうがいいかも */
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.stores_wrap_card_catch2 {
+    padding-bottom: 0.5rem;
+    font-size: 14px;
+    border-bottom: solid 1px #542912;
+}
+.stores_wrap_card_tags2 {
+    display: flex;
+    margin: 8px 0 0;
+    font-size: 13px;
+}
+.stores_wrap_card_tag2:not(:first-child) {
+    /* 下のmarginかpaddingコンポーネントしたほうがいいかも */
+    margin: 0 0 0 10px;
+}
 
 /* column */
 /* fuji カード全体がいらないならcolumn_wrap:hover削除 */

@@ -38,11 +38,6 @@
     justify-content: space-between;
     margin-bottom: 16px;
 }
-/* ジャンプ先がヘッダーにかからない高さになるように調整 */
-#store_info {
-    padding-top: 60px;
-    margin-top: -60px;
-}
 .store_info_btn {
     display: inline-block;
     padding: 8px 14px;
@@ -199,11 +194,11 @@
     height: 100%;
     object-fit: cover;
 }
-/* .recommend_store_list {
+.recommend_store_list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-} */
+}
 .recommend_title {
     font-size: 20px;
     text-align: left;
@@ -221,9 +216,9 @@
 .column2_aside .inner {
     height: 100%;
 }
-/* .side_search {
+.side_search {
     max-width: 480px;
-} */
+}
 .side_title {
     margin-bottom: 50px;
 }
@@ -255,7 +250,7 @@
 }
 
 /* サイドバー横に出現、順番入れ替え */
-@media (min-width: 768px) {
+@media (min-width: 1100px) {
     .column2_flex {
         display: flex;
         flex-wrap: wrap;
@@ -263,11 +258,11 @@
     }
     .column2_article {
         order: 1;
-        flex-basis: 70%;
+        flex-basis: 60%;
     }
     .column2_aside {
         order: 2;
-        flex-basis: 30%;
+        flex-basis: 35%;
     }
     .recommend {
         order: 3;
@@ -279,7 +274,7 @@
     }
 }
 /* サイドバー追従 */
-@media (min-width: 768px) {
+@media (min-width: 1100px) {
     /* 名前変更 */
     aside {
         display: block;
@@ -293,8 +288,8 @@
 
 /* ▼インタビュー記事ある場合（コラムカード:横）▼ */
 .side_column {
-    /* max-width: 480px;
-    min-width: 362px; */
+    max-width: 480px;
+    min-width: 362px;
     background-color: #f6f4ef;
     padding: 10px;
     border-radius: 2px;
@@ -306,7 +301,7 @@
 .side_column_wrap {
     margin: 0 auto;
     /* teisei */
-    /* min-width: 332px; */
+    min-width: 332px;
     background-color: #fff;
 }
 .side_column_wrap + .side_column_wrap {
@@ -316,14 +311,15 @@
     width: 100%;
     display: flex;
 }
+/* 2.21訂正 */
 .side_column_img_wrap {
     width: 44%;
-    /* min-width: 200px; */
+    min-width: 200px;
     overflow: hidden;
 }
 .side_column_meta {
     margin-left: 1%;
-    /* width: 56%; */
+    width: 56%;
     padding: 5px 8px;
 }
 .side_column_date {
