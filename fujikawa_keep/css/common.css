@@ -1,6 +1,6 @@
 body {
   color: #542912;
-  font-family: "Noto Sans JPs";
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 14px;
   font-weight: "";
   letter-spacing: "";
@@ -9,59 +9,71 @@ body {
   overflow-wrap: break-word;
 }
 
+/* bobyのcolorで行くなら消す */
 h1 {
-  color: "";
-  font-family: "";
-  font-size: 32px;
-  font-weight: "";
+  /* color: #542912; */
+  font-family: "Shippori Mincho B1", serif;
+  font-size: 12px;
+  font-weight: bold;
   letter-spacing: "";
   line-height: "";
+  text-align: center;
 }
 h2 {
-  color: #7b850b;
-  font-family: "Rollerscript";
-  font-size: 32px;
-  font-weight: "";
+  /* color: #542912; */
+  font-family: "Shippori Mincho B1", serif;
+  font-size: 12px;
+  font-weight: bold;
   letter-spacing: "";
   line-height: "";
   text-align: center;
 }
 h3 {
-  color: #542912;
-  font-family: "Shippori Mincho B1";
-  font-size: 20px;
+  /* color: #542912; */
+  font-family: "Shippori Mincho B1", serif;
+  font-size: 16px;
   font-weight: "";
   letter-spacing: "";
   line-height: "";
 }
 /* p を.title_sub にしても良い*/
 .wrap_title p {
+  color: #7b850b;
+  font-family: rollerscript-rough, sans-serif;
+  font-size: 32px;
   text-align: center;
 }
 
 img {
   max-width: 100%;
+  object-fit: cover;
 }
 iframe {
   max-width: 100%;
 }
-/* 文字を背景を外すならimgのみ */
-a img {
-  transition: 0.2s ease-in-out;
-}
-a {
-  transition: 1.5s ease-in-out;
-}
-/* ======================================================== */
-/* 余白について1(3パターン) */
-/* section {
-  margin: 0 auto;
-}
-.wrap {
-  padding: 40px 20px 60px;
-} */
 
-/* 余白について2(2パターン) */
+/* fuji */
+a {
+  cursor: pointer;
+}
+a img {
+  /* transition: 1s ease-in-out; */
+  /* 前田さん希望 */
+  transition: 0.3s ease-in-out;
+}
+a img:hover {
+  transform: scale(1.05);
+}
+
+/* 背景ベージュ用 */
+/* section:nth-of-type(even) {
+  background-color: #f6f4ef;
+} */
+/* fuji */
+/* sectionの子要素として内容を囲む */
+.section_bgc {
+  background-color: #f6f4ef;
+}
 
 .wrap {
   margin: 0 auto;
@@ -70,57 +82,29 @@ a {
   padding: 40px 20px 60px;
 }
 
-/* 余白について3(3パターン) */
-/*  3%内訳23pxと25px*/
-/* section {
-  margin: 0 auto;
-}
-.wrap {
-  padding: 40px 3% 60px;
-} */
-
-/* 背景ベージュ用 */
-section:nth-of-type(even) {
-  background-color: #f6f4ef;
-}
 .wrap_title {
   margin-bottom: 60px;
 }
 /* .wrap_text {
 } */
 
-/* ====================================================== */
 /* レスポンス */
 @media (min-width: 768px) {
   h1 {
-    font-size: 48px;
-    font-weight: "";
+    font-size: 28px;
     letter-spacing: "";
     line-height: "";
   }
   h2 {
-    font-size: 48px;
-    font-weight: "";
+    font-size: 28px;
     letter-spacing: "";
     line-height: "";
   }
   h3 {
-    font-size: 32px;
-    font-weight: "";
+    font-size: 22px;
     letter-spacing: "";
     line-height: "";
   }
-
-  /* 余白について1(2パターン) */
-  /* section {
-    max-width: 1300px;
-    margin: 0 auto;
-  }
-  .wrap {
-    padding: 100px 25px;
-  } */
-
-  /* 余白について2(2パターン) 1300pxは適当*/
 
   .wrap {
     max-width: 1300px;
@@ -129,27 +113,232 @@ section:nth-of-type(even) {
   .inner {
     padding: 100px 25px;
   }
-}
 
-/* サイドバー用 */
-@media (min-width: 1100px) {
-  /* 名前変更 */
-  aside {
-    display: block;
-  }
-  .side_scrool {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 100px;
+  .wrap_title p {
+    font-size: 48px;
   }
 }
 
-/* ======コンポーネント一覧================================================ */
+/* ヘッダー */
+/* fuji これでいいか？ */
+.header_wrap {
+  /* 確認用の背景色。実際は動画 */
+  width: 100%;
+  height: 0;
+}
+.header_inner {
+  padding: 0 20px;
+  height: 100%;
+}
+
+/* fuji 下層ヘッダーまで*/
+.header_wrap_box {
+  /* opacity: 0; */
+  transition: 1s ease-in-out;
+  margin-right: -20px;
+  height: 45px;
+}
+@media (min-width: 768px) {
+  .header_wrap_box {
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 60px;
+  }
+}
+.header_wrap_box_icon {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 10px;
+  z-index: 9999;
+}
+.header_wrap_box_icon img {
+  width: 36px;
+  height: 36px;
+}
+.header_nav_list {
+  display: none;
+}
+@media (min-width: 768px) {
+  .header_wrap_box_icon img {
+    width: 60px;
+    height: 60px;
+  }
+  .header_nav_list {
+    display: flex;
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    color: #fff;
+    z-index: 9999;
+  }
+  .header_nav_item {
+    padding: 10px 15px;
+    font-family: "Shippori Mincho B1", serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header_wrap_box_icon {
+    left: calc(50% - 625px);
+  }
+  .header_nav_list {
+    right: calc(50% - 625px);
+  }
+}
+
+/* 下層のヘッダー */
+.header_wrap.under {
+  height: 150px;
+  background-image: url(/img/under_header-01.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 9px 16px -12px rgba(0, 0, 0, 0.6);
+}
+@media (min-width: 768px) {
+  .header_wrap.under {
+    height: 300px;
+  }
+}
+
+/* 下層タイトルエリア */
+.under_title.inner {
+  margin: 0 20px;
+  padding: 60px 0;
+  border-bottom: 1px solid #7b850b;
+}
+@media (min-width: 768px) {
+  .under_title.inner {
+    padding: 100px 0;
+  }
+}
+.under_wrap_title p {
+  color: #7b850b;
+  font-family: rollerscript-rough, sans-serif;
+  font-size: 32px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .under_wrap_title p {
+    font-size: 48px;
+  }
+}
+
+/* ハンバーガーメニュー */
+.header_wrap_box_nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background-color: #041526;
+}
+@media (min-width: 768px) {
+  .header_wrap_box_nav {
+    display: none;
+  }
+}
+.header_wrap_box_nav_line {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+.header_wrap_box_nav_line:nth-of-type(2) {
+  position: absolute;
+  bottom: 16.5px;
+}
+.header_wrap_box_nav_line:nth-of-type(3) {
+  position: absolute;
+  top: 16.5px;
+}
+.header_wrap_box_nav_line:nth-of-type(1).active {
+  opacity: 0;
+}
+.header_wrap_box_nav_line:nth-of-type(2).active {
+  transform: translateY(-5px) rotate(45deg);
+}
+.header_wrap_box_nav_line:nth-of-type(3).active {
+  transform: translateY(5px) rotate(-45deg);
+}
+
+/* ドロワーメニュー */
+.drower {
+  display: none;
+}
+@media (min-width: 768px) {
+  .drower {
+    display: none;
+  }
+}
+/* ↓jsで.visible付け外し */
+.drower.visible {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  overflow-y: auto;
+}
+.drower .wrap {
+  background-color: #041526;
+  height: 100vh;
+}
+.drower .inner {
+  padding: 110px 20px 0;
+  height: 100%;
+}
+.drower_nav_logo {
+  width: 67%;
+  margin: 0 auto 30px;
+  width: 284px;
+}
+.drower_nav {
+  color: #fff;
+  text-align: center;
+}
+.drower_nav_box {
+  margin-bottom: 60px;
+}
+.drower_nav_box_item {
+  display: inline-block;
+  padding: 1em;
+  font-size: 16px;
+}
+.drower_nav_box li + li {
+  border-left: 1px solid #fff;
+}
+.drower_nav_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.drower_nav_item {
+  padding: 1em 3.5em;
+  font-size: 16px;
+}
+.drower_nav_list a {
+  display: inline-block;
+}
+
 /* btn*/
 .btn_wrap {
-  margin: 40px auto;
+  margin: 40px auto 0;
   max-width: 220px;
 }
+/* fuji */
 .btn_link {
   display: block;
   width: 100%;
@@ -158,6 +347,10 @@ section:nth-of-type(even) {
   border-radius: 3px;
   text-align: center;
   opacity: 0.7;
+  font-family: "Shippori Mincho B1", serif;
+  /* transition: 1s ease-in-out; */
+  /* 前田さん希望 */
+  transition: 0.3s ease-in-out;
 }
 .btn_link span {
   color: #fff;
@@ -165,3 +358,76 @@ section:nth-of-type(even) {
 .btn_link:hover {
   opacity: 1;
 }
+@media (min-width: 768px) {
+  .btn_wrap {
+    margin: 100px auto 0;
+    max-width: 250px;
+  }
+  .btn_link {
+    padding: 20px 0;
+    font-size: 20px;
+  }
+}
+
+/* フッター（作成中） */
+footer {
+  background-color: #041526;
+}
+.footer_logo {
+  width: 53%;
+  min-width: 300px;
+  margin: 0 auto 16px;
+}
+.footer_nav_item a {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  font-family: "Shippori Mincho B1", serif;
+  font-size: 18px;
+  color: #fff;
+}
+.footer_nav {
+  margin-bottom: 55px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  footer .inner {
+    padding-top: 185px;
+    padding-bottom: 60px;
+  }
+  .footer_nav {
+    margin-bottom: 55px;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .footer_flex {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 85px;
+  }
+  .footer_nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 24px;
+    border-left: 1px solid #fff;
+    text-align: left;
+  }
+  .footer_logo {
+    width: 320px;
+  }
+  .footer_nav_list:last-of-type {
+    margin-left: 36px;
+  }
+}
+
+.footer_wrap_copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+/* 保管用 */
+/* @media (min-width: 768px) {} */
