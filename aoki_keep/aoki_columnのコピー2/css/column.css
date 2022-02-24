@@ -1,0 +1,202 @@
+body {
+  color: #542912;
+  font-family: "Noto Sans JPs";
+  font-size: 14px;
+  font-weight: "";
+  letter-spacing: "";
+  /* line-height: 2rem; */
+  /* 改行用 */
+  overflow-wrap: break-word;
+}
+
+/* bobyのcolorで行くなら同色は消す */
+h1 {
+  /* color: #542912; */
+  font-family: "Shippori Mincho B1";
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: "";
+  line-height: "";
+  text-align: center;
+}
+h2 {
+  /* color: #542912; */
+  font-family: "Shippori Mincho B1";
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: "";
+  line-height: "";
+  text-align: center;
+}
+h3 {
+  /* color: #542912; */
+  font-family: "Shippori Mincho B1";
+  font-size: 16px;
+  font-weight: "";
+  letter-spacing: "";
+  line-height: "";
+}
+/* p を.title_sub にしても良い*/
+.wrap_title p {
+  color: #7b850b;
+  font-family: "Rollerscript";
+  font-size: 32px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+iframe {
+  max-width: 100%;
+}
+/* 文字を背景を外すならimgのみ */
+a img:hover {
+  transform: scale(1.1);
+  /* transition: 0.3s; */
+  transition: 1s ease-in-out;
+}
+
+a {
+  transition: 1s ease-in-out;
+}
+/* ======================================================== */
+.wrap {
+  margin: 0 auto;
+}
+.inner {
+  padding: 40px 20px 60px;
+}
+
+/* 背景ベージュ用 */
+section:nth-of-type(even) {
+  background-color: #f6f4ef;
+}
+.wrap_title {
+  margin-bottom: 60px;
+}
+/* .wrap_text {
+} */
+
+/* ====================================================== */
+/* レスポンス */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 28px;
+    letter-spacing: "";
+    line-height: "";
+  }
+  h2 {
+    font-size: 28px;
+    letter-spacing: "";
+    line-height: "";
+  }
+  h3 {
+    font-size: 22px;
+    letter-spacing: "";
+    line-height: "";
+  }
+
+  .wrap {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  .inner {
+    padding: 100px 25px;
+  }
+  .wrap_title p {
+    font-size: 48px;
+  }
+}
+
+/* サイドバー用 */
+@media (min-width: 1100px) {
+  /* 名前変更 */
+  aside {
+    display: block;
+  }
+  .side_scrool {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 100px;
+  }
+}
+
+/* ======コンポーネント一覧================================================ */
+/* btn*/
+.btn_wrap {
+  margin: 40px auto 0;
+  max-width: 220px;
+}
+.btn_link {
+  display: block;
+  width: 100%;
+  padding: 16px 32px;
+  background-color: #041526;
+  border-radius: 3px;
+  text-align: center;
+  opacity: 0.7;
+}
+.btn_link span {
+  color: #fff;
+}
+.btn_link:hover {
+  opacity: 1;
+}
+
+
+
+
+
+/* column */
+.card_wrap {
+  /* margin: o auto; */
+  background-color: #fff;
+}
+/* .card_wrap + .card_wrap {
+  margin-top: 20px;
+} */
+.column_inner {
+  width: 100%;
+  display: flex;
+} 
+.img_wrap {
+  width: 44%;
+  min-width: 150px;
+  overflow: hidden;
+}
+.column_meta {
+  margin-left: 1%;
+  width: 56%;
+}
+.column_date {
+  font-size: 12px;
+}
+/* @media (min-width: 768px) {
+  .card_wrap + .card_wrap {
+    margin: 0 0 0 10%;
+  } */
+@media (min-width: 768px) {
+  .card_wrap {
+    /* max-width: 33%; */
+    max-width: 30%;
+    margin: 0 10px 10px 0;
+    /* margin-bottom: 10px;
+    margin-right: 10px; */
+  }
+  .column_inner {
+    display: block;
+   
+  }
+  .column_wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .img_wrap {
+    width: 100%;
+  }
+  .column_meta {
+    width: 100%;
+  }
+}
