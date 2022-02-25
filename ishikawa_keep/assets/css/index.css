@@ -16,8 +16,21 @@
     /* 確認用の背景色。実際は動画 */
     background-color: #000;
     position: relative;
+    overflow: hidden;
+    width: 100%;
     height: 100vh;
 }
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 .mainvisual_box {
     position: absolute;
     top: 50%;
@@ -204,9 +217,8 @@
 
 /* 新着情報 */
 .news_wrap_card {
-    display: flex;
-    align-items: center;
     margin-bottom: 20px;
+    padding: 10px;
     border-bottom: 1px solid #7b850b;
 }
 .news_wrap_card:last-child {
@@ -217,17 +229,41 @@
     text-align: center;
 }
 .news_wrap_card_inner {
+    display: block;
     margin-left: 1%;
     padding: 0.5em;
 }
-.news_date {
-    display: inline-block;
+.news_card_meta {
+    display: flex;
+    align-items: center;
     margin-bottom: 6px;
 }
-.news_head {
-    margin-bottom: 6px;
+.news_date {
+    display: block;
+}
+.category_update {
+    display: block;
+    margin-left: 10px;
+    padding: 0.3em 0.5em;
+    background-color: #542912;
+    color: #fff;
+}
+.category_news {
+    display: block;
+    margin-left: 10px;
+    padding: 0.3em 0.5em;
+    background-color: #fff;
+    border: 1px solid #542912;
+    color: #542912;
 }
 .news_text {
+    display: block;
+    margin-bottom: 6px;
+}
+.news_title {
+    margin-bottom: 6px;
+}
+.news_desc {
     line-height: 1.5em;
 }
 @media (min-width: 768px) {
