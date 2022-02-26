@@ -8,12 +8,9 @@
 /* コラムカード（インタビュー特集がある場合に）このページ用にレイアウト編集した */
 /* ======================================================== */
 
-/* 店舗名　※h2 */
+/* 店舗名　※h1にするのかどうか */
 .store_card {
     line-height: 1.5;
-}
-.store_card h3 {
-    margin-bottom: 10px;
 }
 .store_name {
     margin-bottom: 10px;
@@ -201,9 +198,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-.store_info dd a:link {
-    color: #e0591e;
 }
 /* .recommend_store_list {
     display: flex;
