@@ -66,7 +66,7 @@ color */
 .sp_stores_cars {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 20px;
 }
 .sp_stores_cars .stores_card {
@@ -109,7 +109,7 @@ color */
 .pc_stores_cards {
     display: none;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 auto;
     padding: 20px 0 0;
     max-width: 1100px;
