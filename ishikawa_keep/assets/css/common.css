@@ -22,6 +22,10 @@ body {
     /* 改行用 */
     overflow-wrap: break-word;
 }
+body.fixed {
+    position: fixed;
+    width: 100%;
+}
 
 /* bobyのcolorで行くなら消す */
 h1 {
@@ -329,10 +333,12 @@ section:nth-of-type(even) {
     height: 100%;
     z-index: 999;
     overflow-y: auto;
+    background-color: #041526;
+    font-family: "Shippori Mincho B1", serif;
 }
 .drower .wrap {
-    background-color: #041526;
-    height: 100vh;
+    /* background-color: #041526; */
+    height: 100%;
 }
 .drower .inner {
     /* padding: 110px 20px 0; */
@@ -369,6 +375,9 @@ section:nth-of-type(even) {
 }
 .drower_nav_list a {
     display: inline-block;
+}
+.drower_nav_list:last-child {
+    padding-bottom: 50px;
 }
 
 /* btn*/
