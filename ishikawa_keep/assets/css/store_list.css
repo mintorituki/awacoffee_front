@@ -45,16 +45,6 @@ color */
     }
 } */
 
-/* ===================== ↓カード:hover img拡大 overflow: hidden; ===================== */
-
-.stores_card:hover .card_img {
-    transform: scale(1.05);
-}
-figure {
-    border-radius: 5px 5px 0 0;
-    overflow: hidden;
-}
-
 /* ===================== ↓SP_card_CSS ===================== */
 /* h3_見出し（一覧、条件検索で使用） */
 .area_cate {

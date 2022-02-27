@@ -4,7 +4,10 @@
 /* 条件検索結果ページCSS */
 
 /* ======================================================== */
-
+.search_content {
+    max-width: 877px;
+    margin: 0 auto;
+}
 .result h2 {
     margin-bottom: 40px;
     font-size: 18px;
@@ -20,15 +23,20 @@
     }
 }
 
-/* h3_見出し（一覧、条件検索で使用） */
+/* 左よこ縦棒 */
 .area_cate {
-    margin-bottom: 20px;
     padding: 5px 5px 5px 10px;
     font-family: "Shippori Mincho B1";
-    font-size: 16px;
+    font-size: 15px;
     border-left: #7b850b 5px solid;
+    margin-bottom: 10px;
 }
-
+@media (min-width: 768px) {
+    .area_cate {
+        margin-bottom: 50px;
+        font-size: 24px;
+    }
+}
 .search_words_box {
     margin-bottom: 40px;
 }

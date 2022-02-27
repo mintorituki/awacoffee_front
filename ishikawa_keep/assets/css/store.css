@@ -148,11 +148,11 @@
     height: 100px;
 }
 .store_illust_01 {
-    background-image: url(../img/store_staff02.png);
+    background-image: url(../img/master01.svg);
     margin-left: 40px;
 }
 .store_illust_02 {
-    background-image: url(../img/store_menu01.png);
+    background-image: url(../img/store_menu_02.svg);
     margin-left: 30px;
 }
 .store_commit_text {
@@ -202,7 +202,7 @@
     height: 100%;
     object-fit: cover;
 }
-.store_info dd a:link {
+dd a:hover {
     color: #e0591e;
 }
 /* .recommend_store_list {

@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* ======================================================== */
 /* お問い合わせページCSS */
-
+/* お問い合わせ完了ページCSS */
 /* ======================================================== */
 .contact h2 {
     margin-bottom: 40px;
@@ -26,7 +26,15 @@ textarea {
 .contact_message {
     margin-bottom: 40px;
     text-align: center;
+    font-family: "Shippori Mincho B1", serif;
+    line-height: 1.5;
 }
+@media (min-width: 768px) {
+    .contact_message {
+        font-size: 16px;
+    }
+}
+
 form {
     padding: 15px;
     background-color: #f6f4ef;
@@ -90,4 +98,21 @@ form {
 .search_btn_wrap:hover.search_btn_wrap::before {
     transform: translate(-50%, -50%) scale(0);
     opacity: 0;
+}
+
+/* お問い合わせ完了ページ */
+.contact_master {
+    margin: 0 auto;
+    background-image: url(../img/thanks_staff01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    width: 200px;
+    height: 300px;
+}
+@media (min-width: 768px) {
+    .contact_master {
+        width: 400px;
+        height: 500px;
+    }
 }
