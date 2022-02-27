@@ -10,17 +10,10 @@
         <meta name="description" content="" />
 
         <!-- ▼フォント:Rollerscript Rough▼ -->
-        <!-- CSSでの指定 /CSSに移したら消す-->
-        <!-- font-family: rollerscript-rough, sans-serif;
-            font-weight: 400;
-            font-style: normal; -->
         <link rel="stylesheet" href="https://use.typekit.net/twf1hjd.css" />
 
         <!-- ▼フォント:Shippori Mincho B1(Regular,Medium,Bold) -->
         <!-- ▼フォント:Noto Sans Japanese(Regular,Medium,Bold) -->
-        <!-- CSSでの指定 /CSSに移したら消す-->
-        <!-- font-family: 'Noto Sans JP', sans-serif;
-            font-family: 'Shippori Mincho B1', serif; -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -42,14 +35,10 @@
         <link href="./assets/css/reset.css" rel="stylesheet" media="all" />
         <!-- ▼共通スタイル▼ -->
         <link href="./assets/css/common.css" rel="stylesheet" media="all" />
-        <!-- ▼条件検索結果ページのCSS /ファイル名記載する▼ -->
-        <link
-            href="./assets/css/column_list.css"
-            rel="stylesheet"
-            media="all"
-        />
+        <!-- ▼マイページのCSS ▼ -->
+        <link href="./assets/css/contact.css" rel="stylesheet" media="all" />
 
-        <title>コラム一覧</title>
+        <title>マイページ</title>
     </head>
     <body>
         <!-- ▼SP下層ヘッダー▼ -->
@@ -163,27 +152,63 @@
             <div class="wrap mainvisual_wrap">
                 <div class="under_title inner">
                     <div class="under_wrap_title">
-                        <p>Column</p>
-                        <h1>コラム</h1>
+                        <p>Contact</p>
+                        <h1>お問い合わせ</h1>
                     </div>
                 </div>
             </div>
             <!-- /.wrap -->
 
-            <section>
+            <section class="contact">
                 <div class="wrap">
                     <div class="inner">
-                        <div class="text_btns">
-                            <ul>
-                                <li class="btn"><a href="###">入門知識</a></li>
-                                <li class="btn"><a href="###">特集</a></li>
-                                <li class="btn"><a href="###">ブログ</a></li>
-                            </ul>
+                        <h2>お問い合わせフォーム</h2>
+                        <div class="contact_container">
+                            <p class="contact_message">
+                                当サイトへの掲載依頼や記事内容についての
+                                お問い合わせはこちらからお願いいたします。
+                            </p>
+                            <form action="">
+                                <div class="contact_row">
+                                    <div class="contact_item">
+                                        お名前<span>必須</span>
+                                    </div>
+                                    <input
+                                        type="text"
+                                        name="customer"
+                                        class="contact_parts"
+                                        size="60"
+                                        placeholder="徳島 太郎"
+                                    />
+                                </div>
+                                <div class="contact_row">
+                                    <div class="contact_item">
+                                        e-mail<span>必須</span>
+                                    </div>
+                                    <input
+                                        type="email"
+                                        name="customer_email"
+                                        class="contact_parts"
+                                        size="100"
+                                        placeholder="sample@email.com"
+                                    />
+                                </div>
+                                <div class="contact_row">
+                                    <div class="contact_item">
+                                        お問い合わせ内容<span>必須</span>
+                                    </div>
+                                    <textarea
+                                        name="customer_text"
+                                        id=""
+                                        cols="50"
+                                        rows="10"
+                                        placeholder="内容を入力してください"
+                                    ></textarea>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <!-- inner -->
                 </div>
-                <!-- wrap -->
             </section>
         </main>
 
