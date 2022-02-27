@@ -192,11 +192,30 @@ section:nth-of-type(even) {
         z-index: 9999;
     }
     .header_nav_item {
+        position: relative;
         padding: 10px 15px;
         font-family: "Shippori Mincho B1", serif;
         font-size: 16px;
         font-weight: bold;
         margin-right: 10px;
+    }
+    /* hoverした時の線 */
+    .header_nav_item::after {
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: currentColor;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+    }
+    .header_nav_item:hover:after {
+        bottom: -4px;
+        opacity: 1;
+        visibility: visible;
     }
 }
 @media screen and (min-width: 1280px) {
