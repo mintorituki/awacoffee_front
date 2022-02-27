@@ -11,6 +11,8 @@
 藍　#041526
 color */
 
+/* =========== ↓カードにホバーしたときにimgが拡大される =========== */
+
 .stores_card:hover .card_img {
     transform: scale(1.05);
 }
