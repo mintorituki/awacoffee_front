@@ -253,11 +253,14 @@ dd a:hover {
 .side_lists .list::after {
     content: "\f054";
     position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
+    top: 35%;
+    right: 1em;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
+    transition: all 0.5s;
+}
+.side_lists .list:hover:after {
+    transform: translateX(1em);
 }
 
 /* サイドバー横に出現、順番入れ替え */
