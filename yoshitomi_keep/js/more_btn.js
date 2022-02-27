@@ -24,18 +24,54 @@
 //     }
 // });
 
-// ▼moreボタンでさらに表示▼
-// 出るには出てる（出てくる枚数がおかしい気はする）
-// moreボタン押した時の判定がエリアの垣根を超えてしまう
+// =========pcのカードのmoreボタン================================================
 
-let show = 3; //初期表示件数
-let num = 3; //追加していく件数（仮）
-let contents = ".store_lists article";
+function pcMoreBtn(params) {
+    const show = 3; //初期表示枚数
+    const moreNum = 3; //追加カード枚数
+    $(".stores_card:nth-child(n + " + (show + 1) + ")").addClass("is-hidden"); //初期表示枚数以降のカードにis-hiddenをつける
+    $(".more_btn").on("click", function () {
+        $(this)
+            .prev(".store_lists")
+            .find(".stores_card.is-hidden")
+            .slice(0, moreNum)
+            .removeClass("is-hidden");
+        if (
+            $(this).prev(".store_lists").find(".stores_card.is-hidden")
+                .length == 0
+        ) {
+            $(this).fadeOut();
+        }
+    });
+}
 
-console.log(document.getElementsByClassName("store_lists"));
-//     .addClass("is-hidden");
-// document
-//     .getElementsByClassName("more_btn")[0]
-//     .addEventListener("click", function () {});
+// =========spのカードのmoreボタン================================================
 
-style.appendChild(document.createTextNode(css));
+function spMoreBtn() {
+    const show = 4; //初期表示枚数
+    const moreNum = 4; //追加カード枚数
+    $(".stores_card:nth-child(n + " + (show + 1) + ")").addClass("is-hidden");
+    $(".more_btn").on("click", function () {
+        $(this)
+            .prev(".store_lists")
+            .find(".stores_card.is-hidden")
+            .slice(0, moreNum)
+            .removeClass("is-hidden");
+        if (
+            $(this).prev(".store_lists").find(".stores_card.is-hidden")
+                .length == 0
+        ) {
+            $(this).fadeOut();
+        }
+    });
+}
+
+// ロード時のwindow幅に応じてmoreボタンの関数を分ける　これをリアルタイムに切り替わるようにしたい
+
+let windowSize = $(window).width();
+
+if (windowSize < 768) {
+    spMoreBtn();
+} else {
+    pcMoreBtn();
+}
