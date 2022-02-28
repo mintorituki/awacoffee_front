@@ -1,38 +1,16 @@
-.column_img_wrap img {
-  width: 150px;
-  height: 112.5px;
-  object-fit: contain;
-}
-@media (min-width: 768px) {
-  .column_img_wrap img {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-@media (min-width: 768px) {
-  .card_wrap {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
+/* fuji作成分 */
+/* fuji カード全体がいらないならcolumn_wrap:hover削除 */
 .column_wrap {
   margin: 0 auto;
-<<<<<<< HEAD
   min-width: 332px;
   background-color: #fff;
   box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 15%);
-=======
-
->>>>>>> b0eb16d45b5618a38291a5605e8d871f26ca5999
   border-radius: 3px;
   transition: 0.3s ease-in-out;
 }
 
 .column_wrap:hover {
   box-shadow: 0 0 15px #542912;
-<<<<<<< HEAD
 }
 .column_wrap + .column_wrap {
   margin-top: 20px;
@@ -98,99 +76,6 @@
   .column_text {
     margin-bottom: 10px;
   }
-=======
-}
-@media (min-width: 768px) {
-  .column_wrap {
-    box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 15%);
-  }
-}
-
-.column_wrap + .column_wrap {
-  margin-top: 20px;
-}
-@media (min-width: 768px) {
-  .column_wrap + .column_wrap {
-    margin: 0 0 0 8%;
-  }
-}
-
-.column_inner {
-  display: flex;
-}
-@media (min-width: 768px) {
-  .column_inner {
-    display: block;
-  }
-}
-
-.column_img_wrap {
-  min-width: 100px;
-  overflow: hidden;
-  border-radius: 3px;
-}
-@media (min-width: 768px) {
-  .column_img_wrap {
-    width: 100%;
-  }
-}
-
-.column_meta {
-  flex-grow: 2;
-  margin-left: 10px;
-  border-bottom: 1px solid #7b850b;
-}
-@media (min-width: 768px) {
-  .column_meta {
-    margin-left: 0;
-    padding: 10px 18px 16px;
-    border-bottom: none;
-  }
-}
-
-.column_meta h3 {
-  margin-bottom: 5px;
-}
-@media (min-width: 768px) {
-  .column_meta h3 {
-    font-size: 20px;
-    border-bottom: 1px solid #7b850b;
-    padding-bottom: 16px;
-    margin-bottom: 15px;
-  }
-}
-
-.column_text {
-  display: none;
-  margin-bottom: 10px;
-  font-size: 14px;
-}
-
-.categories {
-  display: inline-block;
-
-  padding: 0.2em 0.5em;
-
-  font-size: 12px;
-  background-color: #f6f4ef;
-}
-@media (min-width: 768px) {
-  .categories {
-    font-size: 14px;
-  }
-}
-
-.column_date {
-  display: inline-block;
-  margin-right: 15px;
-  font-size: 14px;
-}
-
-.categories_wrap {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
->>>>>>> b0eb16d45b5618a38291a5605e8d871f26ca5999
 }
 
 /* yoshitomi作成分 */
@@ -206,30 +91,18 @@ figure {
 
 /* ===================== ↓SP_card_CSS ===================== */
 
-<<<<<<< HEAD
 .sp_stores_cards {
-=======
-.sp_stores_cars {
->>>>>>> b0eb16d45b5618a38291a5605e8d871f26ca5999
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-<<<<<<< HEAD
 .sp_stores_cards::after {
-=======
-.sp_stores_cars::after {
->>>>>>> b0eb16d45b5618a38291a5605e8d871f26ca5999
   display: block;
   content: "";
   flex-basis: calc((100% - 3%) / 2);
 }
 
-<<<<<<< HEAD
 .sp_stores_cards .stores_card {
-=======
-.sp_stores_cars .stores_card {
->>>>>>> b0eb16d45b5618a38291a5605e8d871f26ca5999
   /* width: 45%;
     max-width: 270px; */
   margin-bottom: 20px;
@@ -239,58 +112,34 @@ figure {
   flex-basis: calc((100% - 3%) / 2);
 }
 
-<<<<<<< HEAD
 .sp_stores_cards .stores_card:hover {
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 .sp_stores_cards .text_inner {
-=======
-.sp_stores_cars .stores_card:hover {
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
-}
-
-.sp_stores_cars .text_inner {
->>>>>>> b0eb16d45b5618a38291a5605e8d871f26ca5999
   width: 90%;
   margin: 0.5rem auto;
 }
 
-<<<<<<< HEAD
 .sp_stores_cards .stores_name {
-=======
-.sp_stores_cars .stores_name {
->>>>>>> b0eb16d45b5618a38291a5605e8d871f26ca5999
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 600;
 }
 
-<<<<<<< HEAD
 .sp_stores_cards .stores_catch {
-=======
-.sp_stores_cars .stores_catch {
->>>>>>> b0eb16d45b5618a38291a5605e8d871f26ca5999
   padding-bottom: 0.5rem;
   font-size: 14px;
   border-bottom: solid 1px #542912;
 }
 
-<<<<<<< HEAD
 .sp_stores_cards .stores_tags {
-=======
-.sp_stores_cars .stores_tags {
->>>>>>> b0eb16d45b5618a38291a5605e8d871f26ca5999
   display: flex;
   margin: 8px 0 0;
   font-size: 13px;
 }
 
-<<<<<<< HEAD
 .sp_stores_cards .stores_tag:not(:first-child) {
-=======
-.sp_stores_cars .stores_tag:not(:first-child) {
->>>>>>> b0eb16d45b5618a38291a5605e8d871f26ca5999
   margin: 0 0 0 10px;
 }
 
@@ -370,11 +219,7 @@ figure {
 
 .pc_stores_cards .back_card {
   position: relative;
-<<<<<<< HEAD
   margin: 2rem -10px 10px;
-=======
-  margin: 2rem 0 0;
->>>>>>> b0eb16d45b5618a38291a5605e8d871f26ca5999
   width: 95%;
   left: 16px;
   background-color: #fff;
@@ -388,11 +233,7 @@ figure {
 }
 
 @media (min-width: 768px) {
-<<<<<<< HEAD
   .sp_stores_cards {
-=======
-  .sp_stores_cars {
->>>>>>> b0eb16d45b5618a38291a5605e8d871f26ca5999
     display: none;
   }
 
@@ -406,7 +247,6 @@ figure {
     width: 31%;
     max-width: 280px;
   }
-<<<<<<< HEAD
 }
 
 /* ===================== ↓more_btn関係 ===================== */
@@ -454,6 +294,4 @@ figure {
   height: 0;
   margin: 0 10px;
   padding: 0;
-=======
->>>>>>> b0eb16d45b5618a38291a5605e8d871f26ca5999
 }
