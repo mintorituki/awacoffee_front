@@ -95,6 +95,7 @@ figure {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 20px 0 0;
 }
 .sp_stores_cards::after {
   display: block;
