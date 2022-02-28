@@ -234,15 +234,16 @@ section:nth-of-type(even) {
 /* 下層のヘッダー */
 .header_wrap.under {
     height: 150px;
+    /* height: clamp(80px, 20vw, 150px); */
     background-image: url(../img/free0.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0px 9px 16px -12px rgba(0, 0, 0, 0.6);
-    margin-top: -45px;
 }
 @media (min-width: 768px) {
     .header_wrap.under {
         height: 300px;
+        /* height: clamp(150px, 20vw, 200px); */
     }
 }
 

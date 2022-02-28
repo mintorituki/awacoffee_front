@@ -36,7 +36,6 @@
         <!-- ▼共通スタイル▼ -->
         <link href="assets/css/common.css" rel="stylesheet" media="all" />
         <!-- ▼店舗個別ページのCSS/ニュース一覧ページのCSS▼ -->
-        <link rel="stylesheet" href="assets/css/store.css" />
         <link rel="stylesheet" href="assets/css/news.css" />
 
         <title>ニュース一覧ページ</title>
@@ -331,45 +330,45 @@
                 </div>
 
                 <!-- サイドバー -->
-                <aside class="column2_aside">
+                <div class="column2_aside">
                     <div class="wrap">
                         <div class="inner">
                             <div class="side_scrool">
-                                <ul class="side_search">
-                                    <li class="side_title">
-                                        <span>コラムカテゴリ一覧</span>
-                                        <ul class="side_lists">
-                                            <li class="list">
-                                                <a href="">入門知識</a>
-                                            </li>
-                                            <li class="list">
-                                                <a href="">ブログ</a>
-                                            </li>
-                                            <li class="list">
-                                                <a href="">特集</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="side_title">
-                                        <span>ニュース</span>
-                                        <ul class="side_lists">
-                                            <li class="list">
-                                                <a href="">おしらせ</a>
-                                            </li>
-                                            <li class="list">
-                                                <a href="">更新情報</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
+                                <!-- コラムカテゴリ -->
+                                <aside>
+                                    <h2 class="side_title">
+                                        コラムカテゴリ一覧
+                                    </h2>
+                                    <ul class="side_lists">
+                                        <li class="list">
+                                            <a href="">入門知識</a>
+                                        </li>
+                                        <li class="list">
+                                            <a href="">ブログ</a>
+                                        </li>
+                                        <li class="list">
+                                            <a href="">特集</a>
+                                        </li>
+                                    </ul>
+                                </aside>
+                                <!-- ニュース -->
+                                <aside>
+                                    <h2 class="side_title">ニュース</h2>
+                                    <ul class="side_lists">
+                                        <li class="list">
+                                            <a href="">おしらせ</a>
+                                        </li>
+                                        <li class="list">
+                                            <a href="">更新情報</a>
+                                        </li>
+                                    </ul>
+                                </aside>
                             </div>
-
-                            <!-- side_column_wrap -->
                         </div>
-                        <!-- viewport -->
+                        <!-- inner -->
                     </div>
-                    <!-- side_wrap -->
-                </aside>
+                    <!-- wrap -->
+                </div>
             </div>
         </main>
 

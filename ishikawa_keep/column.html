@@ -35,8 +35,7 @@
         <link href="assets/css/reset.css" rel="stylesheet" media="all" />
         <!-- ▼共通スタイル▼ -->
         <link href="assets/css/common.css" rel="stylesheet" media="all" />
-        <!-- ▼コラム個別ページのCSS /店舗個別ページのCSS▼ -->
-        <link rel="stylesheet" href="assets/css/store.css" />
+        <!-- ▼コラム個別ページのCSS▼ -->
         <link href="assets/css/column.css" rel="stylesheet" media="all" />
 
         <title>コラム記事詳細ページ</title>
@@ -44,7 +43,7 @@
     <body>
         <!-- ▼下層ヘッダー▼ -->
         <header>
-            <!-- <div class="header_wrap under"> -->
+            <div class="header_wrap under">
                 <div class="header_inner">
                     <div class="header_wrap_box">
                         <!-- ▼カップicon▼ -->
@@ -155,7 +154,6 @@
             </div>
         </header>
         <main class="column_page">
-            <div class="header_wrap under"></div>
 
             <!-- ▼タイトルエリア▼ -->
             <div class="wrap mainvisual_wrap">
@@ -163,6 +161,9 @@
                     <div class="under_wrap_title">
                         <p>Column</p>
                         <h1>コラム</h1>
+                        <div class="search_jump_box">
+                            <a href="#search_box" class="search_jump_btn"><i class="fa-solid fa-magnifying-glass"></i>記事を探す</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -173,9 +174,7 @@
                 <section class="column2_article">
                     <div class="wrap">
                         <div class="inner">
-                            <div class="column_form">
 
-                            </div>
                             <!-- コラム記事詳細タイトル -->
                             <div class="s_column_title_wrap">
                                 <h1 class="column_title">
@@ -208,6 +207,7 @@
                                         alt=""
                                     />
                                 </figure>
+                                <figcaption>写真のキャプションが入ります</figcaption>
                                 <p class="s_column_text">
                                     ここにテキストが入りますここにテキストが入りますここにテキストが入ります<strong>太字&色CSSテスト</strong>ここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入ります
                                 </p>
@@ -220,6 +220,7 @@
                                         alt=""
                                     />
                                 </figure>
+                                <figcaption>写真のキャプションが入ります</figcaption>
                                 <ul class="s_column_text box">
                                     <li>リストスタイルのテスト</li>
                                     <li>枠線のテスト</li>
@@ -238,6 +239,7 @@
                                         alt=""
                                     />
                                 </figure>
+                                <figcaption>写真のキャプションが入ります</figcaption>
                                 <h3>見出しLv.3のテスト</h3>
                                 <p class="s_column_text">
                                     ここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入ります
@@ -258,7 +260,71 @@
                     <div class="wrap">
                         <div class="inner">
                             <h2 class="recommend_title">あなたへのおすすめ</h2>
-                            ※コラムカードが入る
+                            <div class="card_wrap">
+                                <article class="column_wrap">
+                                    <a href="">
+                                        <div class="column_inner">
+                                        <figure class="column_img_wrap">
+                                            <img src="./assets/img/4-3img.jpg" alt="コラム記事のサムネイル画像" />
+                                        </figure>
+                                        <div class="column_meta">
+                                            <div class="categories_wrap">
+                                            <time class="column_date" datetime="the_time">2022.03.14</time>
+                                            <ul class="categories">
+                                                <li>コーヒー入門知識</li>
+                                            </ul>
+                                            </div>
+                                            <h3>シングルオリジンとブレンドの違い</h3>
+                                            <div class="column_text">
+                                            <p>自家焙煎にこだわった至福の一杯</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </a>
+                                    </article>
+                                    <article class="column_wrap">
+                                    <a href="">
+                                        <div class="column_inner">
+                                        <figure class="column_img_wrap">
+                                            <img src="./assets/img/4-3img.jpg" alt="コラム記事のサムネイル画像" />
+                                        </figure>
+                                        <div class="column_meta">
+                                            <div class="categories_wrap">
+                                            <time class="column_date" datetime="the_time">2022.03.14</time>
+                                            <ul class="categories">
+                                                <li>コーヒー入門知識</li>
+                                            </ul>
+                                            </div>
+                                            <h3>シングルオリジンとブレンドの違い</h3>
+                                            <div class="column_text">
+                                            <p>自家焙煎にこだわった至福の一杯</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </a>
+                                    </article>
+                                    <article class="column_wrap">
+                                    <a href="">
+                                        <div class="column_inner">
+                                        <figure class="column_img_wrap">
+                                            <img src="./assets/img/4-3img.jpg" alt="コラム記事のサムネイル画像" />
+                                        </figure>
+                                        <div class="column_meta">
+                                            <div class="categories_wrap">
+                                            <time class="column_date" datetime="the_time">2022.03.14</time>
+                                            <ul class="categories">
+                                                <li>コーヒー入門知識</li>
+                                            </ul>
+                                            </div>
+                                            <h3>シングルオリジンとブレンドの違い</h3>
+                                            <div class="column_text">
+                                            <p>自家焙煎にこだわった至福の一杯</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </a>
+                                    </article>
+                            </div>
                             <!-- recommend_store_list -->
                         </div>
                         <!-- viewport -->
@@ -275,44 +341,39 @@
                         <div class="inner">
                             <div class="side_scrool">
                                 <!-- 検索BOX -->
-                                <aside class="column_search">
+                                <aside id="search_box" class="column_search">
                                     <form method="get" action="#" class="search_container">
-                                        <input type="text" size="25" placeholder="　キーワード検索">
+                                        <input type="text" size="25" placeholder="キーワード検索">
                                         <input type="submit" value="&#xf002">
                                     </form>
                                 </aside>
                                 <!-- コラムカテゴリ -->
                                 <aside>
-                                        <div class="side_title">
-                                            <span>コラムカテゴリ一覧</span>
-                                            <ul class="side_lists">
-                                                <li class="list">
-                                                    <a href="">入門知識</a>
-                                                </li>
-                                                <li class="list">
-                                                    <a href="">ブログ</a>
-                                                </li>
-                                                <li class="list">
-                                                    <a href="">特集</a>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                    <h2 class="side_title">コラムカテゴリ一覧</h2>
+                                    <ul class="side_lists">
+                                        <li class="list">
+                                            <a href="">入門知識</a>
+                                        </li>
+                                        <li class="list">
+                                            <a href="">ブログ</a>
+                                        </li>
+                                        <li class="list">
+                                            <a href="">特集</a>
+                                        </li>
+                                    </ul>
                                 </aside>
                                 <!-- ニュース -->
                                 <aside>
-                                    <div class="side_title">
-                                        <span>ニュース</span>
-                                        <ul class="side_lists">
-                                            <li class="list">
-                                                <a href="">おしらせ</a>
-                                            </li>
-                                            <li class="list">
-                                                <a href="">更新情報</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    <h2 class="side_title">ニュース</h2>
+                                    <ul class="side_lists">
+                                        <li class="list">
+                                            <a href="">おしらせ</a>
+                                        </li>
+                                        <li class="list">
+                                            <a href="">更新情報</a>
+                                        </li>
+                                    </ul>
                                 </aside>
-                                </ul>
                             </div>
 
                         </div>
