@@ -119,9 +119,13 @@
 .categories_wrap {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
-
+@media (min-width: 768px) {
+  .categories_wrap {
+    margin: 0 0 10px 0;
+  }
+}
 /* yoshitomi作成分 */
 /* =========== ↓カードにホバーしたときにimgが拡大される =========== */
 
