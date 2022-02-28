@@ -44,7 +44,7 @@
     <body>
         <!-- ▼下層ヘッダー▼ -->
         <header>
-            <div class="header_wrap under">
+            <!-- <div class="header_wrap under"> -->
                 <div class="header_inner">
                     <div class="header_wrap_box">
                         <!-- ▼カップicon▼ -->
@@ -155,6 +155,8 @@
             </div>
         </header>
         <main class="column_page">
+            <div class="header_wrap under"></div>
+
             <!-- ▼タイトルエリア▼ -->
             <div class="wrap mainvisual_wrap">
                 <div class="under_title inner">
@@ -171,11 +173,14 @@
                 <section class="column2_article">
                     <div class="wrap">
                         <div class="inner">
+                            <div class="column_form">
+
+                            </div>
                             <!-- コラム記事詳細タイトル -->
                             <div class="s_column_title_wrap">
-                                <h2 class="column_title">
+                                <h1 class="column_title">
                                     コーヒーショップでの過ごし方①おひとり様編
-                                </h2>
+                                </h1>
                                 <ul class="tags">
                                     <li class="tag">
                                         <a href="">自家焙煎</a>
@@ -196,7 +201,7 @@
                             </div>
 
                             <div class="s_column_card">
-                                <h3 class="s_column_subtitle">読書をする</h3>
+                                <h2 class="s_column_subtitle">読書をする</h2>
                                 <figure class="s_column_img">
                                     <img
                                         src="assets/img/store-img01.jpg"
@@ -208,7 +213,7 @@
                                 </p>
                             </div>
                             <div class="s_column_card">
-                                <h3 class="s_column_subtitle">読書をする</h3>
+                                <h2 class="s_column_subtitle">読書をする</h2>
                                 <figure class="s_column_img">
                                     <img
                                         src="assets/img/store-img01.jpg"
@@ -226,21 +231,21 @@
                                 </p>
                             </div>
                             <div class="s_column_card">
-                                <h3 class="s_column_subtitle">読書をする</h3>
+                                <h2 class="s_column_subtitle">読書をする</h2>
                                 <figure class="s_column_img">
                                     <img
                                         src="assets/img/store-img01.jpg"
                                         alt=""
                                     />
                                 </figure>
-                                <h4>見出しLv.4のテスト</h4>
+                                <h3>見出しLv.3のテスト</h3>
                                 <p class="s_column_text">
                                     ここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入ります
                                 </p>
                             </div>
                             <!-- 最後のカードだけまとめ記事 -->
                             <div class="s_column_card">
-                                <h3 class="s_column_subtitle">まとめ</h3>
+                                <h2 class="s_column_subtitle">まとめ</h2>
                                 <p class="s_column_text">
                                     ここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入ります
                                 </p>
@@ -263,26 +268,39 @@
                 <!-- recommend -->
 
                 <!-- ▼サイドバー▼ -->
-                <aside class="column2_aside">
+
+                <div class="column2_aside">
+
                     <div class="wrap">
                         <div class="inner">
                             <div class="side_scrool">
-                                <ul class="side_search">
-                                    <li class="side_title">
-                                        <span>コラムカテゴリ一覧</span>
-                                        <ul class="side_lists">
-                                            <li class="list">
-                                                <a href="">入門知識</a>
-                                            </li>
-                                            <li class="list">
-                                                <a href="">ブログ</a>
-                                            </li>
-                                            <li class="list">
-                                                <a href="">特集</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="side_title">
+                                <!-- 検索BOX -->
+                                <aside class="column_search">
+                                    <form method="get" action="#" class="search_container">
+                                        <input type="text" size="25" placeholder="　キーワード検索">
+                                        <input type="submit" value="&#xf002">
+                                    </form>
+                                </aside>
+                                <!-- コラムカテゴリ -->
+                                <aside>
+                                        <div class="side_title">
+                                            <span>コラムカテゴリ一覧</span>
+                                            <ul class="side_lists">
+                                                <li class="list">
+                                                    <a href="">入門知識</a>
+                                                </li>
+                                                <li class="list">
+                                                    <a href="">ブログ</a>
+                                                </li>
+                                                <li class="list">
+                                                    <a href="">特集</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                </aside>
+                                <!-- ニュース -->
+                                <aside>
+                                    <div class="side_title">
                                         <span>ニュース</span>
                                         <ul class="side_lists">
                                             <li class="list">
@@ -292,16 +310,16 @@
                                                 <a href="">更新情報</a>
                                             </li>
                                         </ul>
-                                    </li>
+                                    </div>
+                                </aside>
                                 </ul>
                             </div>
 
-                            <!-- side_column_wrap -->
                         </div>
-                        <!-- viewport -->
+                        <!-- inner -->
                     </div>
-                    <!-- side_wrap -->
-                </aside>
+                    <!-- wrap -->
+                </div>
             </section>
         </main>
         <footer>
