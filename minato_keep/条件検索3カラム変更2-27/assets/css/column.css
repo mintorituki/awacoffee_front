@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* ======================================================== */
+/* コラム詳細記事CSS */
+
+/* ======================================================== */
+
+/* コラム記事タイトル */
+.s_column_title_wrap h2 {
+    font-size: calc(15px + 10 * (100vw - 375px) / 725);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.s_column_title_wrap .tags {
+    margin-bottom: 42px;
+}
+.s_column_title_wrap .tags .tag {
+    display: inline-block;
+}
+.s_column_title_wrap .tags .tag:not(:last-child) {
+    margin-right: 5px;
+}
+
+.s_column_title_wrap .tag::before {
+    content: "#";
+}
+.s_column_title_text {
+    margin-bottom: 60px;
+    line-height: 1.375;
+}
+
+/* コラム本文 */
+.s_column_cards {
+    max-width: 690px;
+    margin: 0 20px;
+}
+/* 左よこ縦棒 */
+.s_column_subtitle {
+    padding: 5px 5px 5px 10px;
+    font-family: "Shippori Mincho B1";
+    font-size: 18px;
+    border-left: #7b850b 7px solid;
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+@media (min-width: 768px) {
+    .s_column_subtitle {
+        font-size: 24px;
+    }
+}
+.s_column_card {
+    margin-bottom: 40px;
+}
+
+.s_column_card:nth-last-child(2) {
+    margin-bottom: 100px;
+}
+.s_column_img {
+    width: 100%;
+    padding-top: 75%;
+    position: relative;
+    margin-bottom: 20px;
+}
+.s_column_img img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.s_column_text {
+    padding: 0 1em;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.375;
+}
+@media (min-width: 768px) {
+    .s_column_cards {
+        margin-bottom: 200px;
+    }
+    .s_column_text {
+        font-size: 16px;
+    }
+}
+/* コラム用／投稿画面とリンクさせたスタイル */
+/* ①太字かつ文字色 */
+.column_page strong {
+    color: #e0591e;
+}
+/* ②リストのスタイル.user agent stylesheetを基本に調整 */
+.column_page .s_column_text {
+    display: block;
+    list-style: disc inside none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 20px;
+}
+/* ③枠線 class名を指定 */
+.column_page .box {
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid#542912;
+}
+/* ④h4のスタイルを設定 */
+.column_page h4 {
+    position: relative;
+    margin-left: 10px;
+    padding: 0.3em 0.3em 0.3em 0.5em;
+    font-family: "Shippori Mincho B1";
+    font-size: 16px;
+    border-left: #7b850b 7px solid;
+    margin-bottom: 10px;
+}
+.column_page h4::after {
+    position: absolute;
+    content: "";
+    left: -13px;
+    bottom: -6px;
+    width: 100%;
+    border-bottom: 1px solid #7b850b;
+}
