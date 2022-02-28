@@ -11,7 +11,7 @@ $(function () {
         } else {
             $(".drower").removeClass("visible");
             $("body").removeClass("fixed").css({ top: 0 });
-            window.scrollTop(0, scrollpos);
+            window.scrollTo(0, scrollpos);
         }
     });
 });
