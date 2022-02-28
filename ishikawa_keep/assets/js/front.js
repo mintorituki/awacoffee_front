@@ -3,8 +3,8 @@
 // ▼ハンバーガーメニュー 表示切り替え▼
 $(function () {
     $(".header_wrap_box_nav").click(function () {
-        $(this).toggleClass("active");
-        if ($(".header_wrap_box_nav").hasClass("active")) {
+        $(this).children().toggleClass("active");
+        if ($(".header_wrap_box_nav_line").hasClass("active")) {
             $(".drower").addClass("visible");
             scrollpos = $(window).scrollTop();
             $("body").addClass("fixed").css({ top: -scrollpos });
