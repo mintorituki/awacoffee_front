@@ -44,7 +44,7 @@
     <body>
         <!-- ▼下層ヘッダー▼ -->
         <header>
-            <div class="header_wrap under">
+            <!-- <div class="header_wrap under"> -->
                 <div class="header_inner">
                     <div class="header_wrap_box">
                         <!-- ▼カップicon▼ -->
@@ -155,6 +155,8 @@
             </div>
         </header>
         <main class="column_page">
+            <div class="header_wrap under"></div>
+
             <!-- ▼タイトルエリア▼ -->
             <div class="wrap mainvisual_wrap">
                 <div class="under_title inner">
@@ -171,6 +173,9 @@
                 <section class="column2_article">
                     <div class="wrap">
                         <div class="inner">
+                            <div class="column_form">
+
+                            </div>
                             <!-- コラム記事詳細タイトル -->
                             <div class="s_column_title_wrap">
                                 <h1 class="column_title">
@@ -263,26 +268,39 @@
                 <!-- recommend -->
 
                 <!-- ▼サイドバー▼ -->
-                <aside class="column2_aside">
+
+                <div class="column2_aside">
+
                     <div class="wrap">
                         <div class="inner">
                             <div class="side_scrool">
-                                <ul class="side_search">
-                                    <li class="side_title">
-                                        <span>コラムカテゴリ一覧</span>
-                                        <ul class="side_lists">
-                                            <li class="list">
-                                                <a href="">入門知識</a>
-                                            </li>
-                                            <li class="list">
-                                                <a href="">ブログ</a>
-                                            </li>
-                                            <li class="list">
-                                                <a href="">特集</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="side_title">
+                                <!-- 検索BOX -->
+                                <aside class="column_search">
+                                    <form method="get" action="#" class="search_container">
+                                        <input type="text" size="25" placeholder="　キーワード検索">
+                                        <input type="submit" value="&#xf002">
+                                    </form>
+                                </aside>
+                                <!-- コラムカテゴリ -->
+                                <aside>
+                                        <div class="side_title">
+                                            <span>コラムカテゴリ一覧</span>
+                                            <ul class="side_lists">
+                                                <li class="list">
+                                                    <a href="">入門知識</a>
+                                                </li>
+                                                <li class="list">
+                                                    <a href="">ブログ</a>
+                                                </li>
+                                                <li class="list">
+                                                    <a href="">特集</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                </aside>
+                                <!-- ニュース -->
+                                <aside>
+                                    <div class="side_title">
                                         <span>ニュース</span>
                                         <ul class="side_lists">
                                             <li class="list">
@@ -292,16 +310,16 @@
                                                 <a href="">更新情報</a>
                                             </li>
                                         </ul>
-                                    </li>
+                                    </div>
+                                </aside>
                                 </ul>
                             </div>
 
-                            <!-- side_column_wrap -->
                         </div>
-                        <!-- viewport -->
+                        <!-- inner -->
                     </div>
-                    <!-- side_wrap -->
-                </aside>
+                    <!-- wrap -->
+                </div>
             </section>
         </main>
         <footer>
