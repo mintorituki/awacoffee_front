@@ -79,6 +79,16 @@
 }
 
 /* yoshitomi作成分 */
+/* =========== ↓カードにホバーしたときにimgが拡大される =========== */
+
+.stores_card:hover .card_img {
+  transform: scale(1.05);
+}
+figure {
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+
 /* ===================== ↓SP_card_CSS ===================== */
 
 .sp_stores_cards {
@@ -209,7 +219,7 @@
 
 .pc_stores_cards .back_card {
   position: relative;
-  margin: 2rem 0 0;
+  margin: 2rem -10px 10px;
   width: 95%;
   left: 16px;
   background-color: #fff;
@@ -223,7 +233,7 @@
 }
 
 @media (min-width: 768px) {
-  .sp_stores_cars {
+  .sp_stores_cards {
     display: none;
   }
 
@@ -237,4 +247,51 @@
     width: 31%;
     max-width: 280px;
   }
+}
+
+/* ===================== ↓more_btn関係 ===================== */
+
+.more_btn {
+  display: block;
+  position: relative;
+  margin: 0 0 50px;
+  padding-right: 30px;
+  text-align: right;
+}
+.more_btn::after {
+  content: "\f054";
+  position: absolute;
+  top: 10%;
+  right: 0;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+@media (min-width: 768px) {
+  .more_btn {
+    margin: 60px 0 0;
+    text-align: right;
+  }
+  .sp_more_btn {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .pc_more_btn {
+    display: none;
+  }
+}
+
+/* moreボタンでさらに表示 */
+.store_lists article {
+  opacity: 1;
+  transition: all 0.4s ease 0s;
+  overflow: hidden;
+}
+.store_lists article.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  margin: 0 10px;
+  padding: 0;
 }
